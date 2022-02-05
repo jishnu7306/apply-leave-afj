@@ -1,0 +1,110 @@
+{% extends 'index.html' %} {% block content %} {% load static %}
+
+<div class="row" style="padding-top:20px;">
+    <div class="col-sm-6 grid-margin">
+        <div class="card" style="height: 280px">
+            <a href="current" style="text-decoration: none;">
+                <div class="card-body">
+                    
+                    <div class="row" style="padding-top:50px;">
+                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                <a href="/app/applyleavesub" style="text-decoration: none">
+                                    <h3 class="mb-0" style="color:white;">Apply Leave</h3>
+                                </a>
+                                
+                            </div>
+                          
+                        </div>
+                        <div class="col-4 col-sm-12 col-xl-2 text-center text-xl-right">
+                            <i class="icon-lg mdi mdi-account-off text-danger ms-auto"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-sm-6 grid-margin">
+        <div class="card" style="height: 280px">
+            <div class="card-body">
+                <a href="prteam" style="text-decoration:none;">
+                  
+                    <div class="row" style="padding-top:50px;">
+                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                <a href="/app/Requestedleave" style="text-decoration: none">
+                                    <h3 class="mb-0" style="color:white;">Requested Leave</h3>
+                                </a>
+                               
+                            </div>
+                           
+                        </div>
+                        <div class="col-4 col-sm-12 col-xl-2 text-center text-xl-right">
+                            <i class="icon-lg mdi mdi-account-remove text-warning ms-auto"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- @ -->
+
+<div class="row" style="padding-top:20px;">
+    <div class="col-sm-6 grid-margin">
+        <div class="card" style="height: 280px">
+            <a href="current" style="text-decoration: none;">
+                <div class="card-body">
+                   
+                    <div class="row" style="padding-top:50px;">
+                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                <a href="/app/trainers_leave" style="text-decoration: none">
+                                    <h3 class="mb-0" style="color:white;">Trainers Leave List </h3>
+                                </a>
+                               
+                            </div>
+                          
+                        </div>
+                        <div class="col-4 col-sm-12 col-xl-2 text-center text-xl-right">
+                            <i class="icon-lg mdi mdi-clipboard-text text-primary ms-auto"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-sm-6 grid-margin">
+        <div class="card" style="height: 280px">
+            <div class="card-body">
+                <a href="prteam" style="text-decoration:none;">
+   
+                    <div class="row" style="padding-top:50px;">
+                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                <a href="/app/trainees_leave" style="text-decoration: none">
+                                    <h3 class="mb-0" style="color:white;">Trainees Leave List </h3>
+                                </a>
+                                
+                            </div>
+                           
+                            
+                        </div>
+                        <div class="col-4 col-sm-12 col-xl-2 text-center text-xl-right">
+                            <i class="icon-lg mdi mdi-clipboard-text text-primary ms-auto"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- end -->
+
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'index.html' %} {% block content %}{% load static %}
+<div class="content-wrapper">
+  <div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center">Apply Leave</h3>
+          <br>
+          <form class="forms-sample">
+
+            <div class="form-group">
+              <label for="exampleInputUsername1">Name</label>
+              <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Name">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputUsername1">Branch</label>
+              <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Branch">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputUsername1">Designation</label>
+              <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Designation">
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-sm-3 col-form-label">Form</label>
+                  <div class="col-sm-12">
+                    <input type="date" class="drop form-control ml-3 mt-2" required>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-sm-3 col-form-label">To</label>
+                  <div class="col-sm-12">
+                    <input type="date" class="drop form-control ml-3 mt-2" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputUsername1">Reason</label>
+              <textarea class="col-12 form-control  text-light" style="height: 150px; background-color: #2A3038; "
+                rows="4"></textarea>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-sm-5"></div>
+              <div class="col-sm-7" class="pull-right">
+                <button type="submit" onclick="redirect()" class="btn btn-outline-success btn-icon-text">
+                  <i class="mdi mdi-file-check btn-icon-prepend"></i>
+                  Submit
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- button calling script (line 95-96)-->
+    <script>
+      function redirect() {
+        window.location.href = "/app/Applyleave"
+      }
+    </script>
+
+    {% endblock %}
